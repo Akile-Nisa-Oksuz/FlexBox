@@ -1,0 +1,22 @@
+body {
+  background-color: antiquewhite;
+}
+.baslik1 {
+  color: aqua;
+}
+#baslik2 {
+  color: brown;
+}
+.baslik1, /*virgül ile seçtiklerimizi vurdular*/
+.paragraf {
+  font-size: 30px;
+}
+.deneme1 p {
+  /*boşluk ile seçilen içindeki bütün aynı elementi seçer*/
+  color: blueviolet;
+  font-size: larger;
+}
+.deneme2 > p {
+  /* childe selector (div içerisinde bir tane daha div varsa ilkini seçer*/
+  background-color: blueviolet;
+}
