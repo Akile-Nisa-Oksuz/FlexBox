@@ -1,22 +1,59 @@
-body {
+/*body {
   background-color: antiquewhite;
 }
-.baslik1 {
-  color: aqua;
+a[target="_blank"] {
+  background-color: aqua;
 }
-#baslik2 {
-  color: brown;
+a:hover {
+  background-color: blue;
 }
-.baslik1, /*virgül ile seçtiklerimizi vurdular*/
-.paragraf {
-  font-size: 30px;
+input:focus {
+  color: aquamarine;
+  border: 5px solid chocolate;
 }
-.deneme1 p {
-  /*boşluk ile seçilen içindeki bütün aynı elementi seçer*/
-  color: blueviolet;
-  font-size: larger;
+p:first-child -> div içerisindeki ilk çocuğu seçer
+p:nth-child() -> div içerisindeki childeları parantezin içerisine yazarak seçer*/
+
+html,
+body {
+  background-color: antiquewhite;
+  margin: 10px;
 }
-.deneme2 > p {
-  /* childe selector (div içerisinde bir tane daha div varsa ilkini seçer*/
-  background-color: blueviolet;
+.container > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+}
+.container > div:nth-child(1) {
+  background-color: aqua;
+}
+.container > div:nth-child(2) {
+  background-color: rgb(179, 255, 0);
+}
+.container > div:nth-child(3) {
+  background-color: aqua;
+}
+.container {
+  border: 1px solid aquamarine;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.home {
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  order: 0; /*sırallamasını ayarlıyor*/
+}
+.search {
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  order: 2;;
+}
+.exit {
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  order: 0;
 }

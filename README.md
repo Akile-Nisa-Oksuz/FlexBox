@@ -1,0 +1,1 @@
+# Felx özellikleri incelendi
